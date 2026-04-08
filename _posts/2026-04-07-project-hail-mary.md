@@ -5,6 +5,13 @@ date: 2026-04-07
 author: Nandini Lokesh Reddy
 ---
 
+<div style="margin-bottom: 2rem;">
+  <p style="font-size: 0.8rem; opacity: 0.5; margin-bottom: 0.4rem; font-style: italic; letter-spacing: 0.03em;">♪ read it with this song, to feel the way i wrote it</p>
+  <div style="overflow: hidden; height: 80px; border-radius: 10px; background: #111;">
+    <iframe width="100%" height="180" src="https://www.youtube.com/embed/qN4ooNx77u0?modestbranding=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="margin-top: -100px; display: block;"></iframe>
+  </div>
+</div>
+
 Just came back from watching *Project Hail Mary* in theaters. And I don’t usually watch movies in theaters.  
 
 It’s been a long time since we saw something this kind, this full of heart, this touching.  
