@@ -3,6 +3,6 @@ description: >
   space.
 baseurl: "/writings."
 url: "https://NandiniLReddy.github.io"
-theme: minima
+theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed

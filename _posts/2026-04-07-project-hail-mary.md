@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "After Project Hail Mary"
 date: 2026-04-07
 author: Nandini Lokesh Reddy
