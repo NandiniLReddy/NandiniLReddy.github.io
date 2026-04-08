@@ -1,6 +1,8 @@
----
-layout: post
-title: "After Project Hail Mary"
-date: 2026-04-07
-author: Nandini Lokesh Reddy
----
+title: Nandini's Reflections
+description: >
+  space.
+baseurl: "/writings."
+url: "https://NandiniLReddy.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
