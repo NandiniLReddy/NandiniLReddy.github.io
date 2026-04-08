@@ -2,6 +2,16 @@ title: Nandini's Reflections
 description: everything in between life.
 baseurl: ""
 url: "https://NandiniLReddy.github.io"
-theme: jekyll-theme-midnight
+remote_theme: cotes2020/jekyll-theme-chirpy
+timezone: America/Chicago
+
+# Chirpy settings
+theme_mode: dark
+avatar: ""
+toc: true
+comments:
+  active: ""
+
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
