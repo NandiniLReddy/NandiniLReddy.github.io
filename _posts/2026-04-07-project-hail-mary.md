@@ -43,3 +43,7 @@ Our pale blue planet, shining in the darkness. The Moon as companion. The Sun as
 > "The more we see, the more we are amazed, the more grateful we feel." — Ralph Waldo Emerson
 
 How much gratitude is enough—for this planet, for life, for Lord Shiva, for this moment, for the chance to exist? I don’t know. But it feels overwhelming. In the most beautiful way.
+
+---
+
+And somewhere in all of this — thank you. To Andy Weir, for imagining a story that made us feel this. To the director, for making us see it. And to Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen — four humans who left Earth and looked back. Who went farther than we ever have, and still came home. How do you even thank someone for that? Maybe you just carry it. Maybe you just try to live a little bigger because of it.
