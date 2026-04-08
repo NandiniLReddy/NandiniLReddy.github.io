@@ -5,35 +5,56 @@ date: 2026-04-07
 author: Nandini Lokesh Reddy
 ---
 
-<div style="margin-bottom: 2rem;">
-  <p style="font-size: 0.8rem; opacity: 0.5; margin-bottom: 0.4rem; font-style: italic; letter-spacing: 0.03em;">♪ read it with this song, to feel the way i wrote it</p>
-  <div id="yt-player" style="display:none;"></div>
-  <button id="play-btn" onclick="togglePlay()" style="background:none; border:1px solid #aaa; color:#aaa; padding:6px 16px; border-radius:20px; cursor:pointer; font-size:0.85rem; letter-spacing:0.05em;">▶ play</button>
+<div style="display:flex;align-items:center;gap:12px;background:#1a1a1a;border:1px solid #333;border-radius:6px;padding:10px 14px;margin-bottom:2rem;">
+  <img src="https://img.youtube.com/vi/qN4ooNx77u0/mqdefault.jpg" style="width:44px;height:44px;object-fit:cover;border-radius:3px;flex-shrink:0;">
+  <div style="flex-shrink:0;min-width:130px;">
+    <div style="font-size:0.8rem;color:#ddd;font-style:italic;">read it with this song</div>
+    <div style="font-size:0.72rem;color:#888;margin-top:2px;">to feel the way i wrote it</div>
+  </div>
+  <button id="play-btn" onclick="togglePlay()" style="background:none;border:none;color:#ddd;cursor:pointer;font-size:1.1rem;flex-shrink:0;padding:0 4px;">▶</button>
+  <span id="cur-time" style="font-size:0.75rem;color:#888;flex-shrink:0;">0:00</span>
+  <div id="prog-bar" onclick="seekTo(event)" style="flex:1;height:3px;background:#444;border-radius:2px;cursor:pointer;position:relative;">
+    <div id="prog-fill" style="height:100%;width:0%;background:#ccc;border-radius:2px;position:relative;">
+      <div style="width:10px;height:10px;background:#fff;border-radius:50%;position:absolute;right:-5px;top:-3.5px;"></div>
+    </div>
+  </div>
+  <span id="rem-time" style="font-size:0.75rem;color:#888;flex-shrink:0;">-0:00</span>
 </div>
+<div id="yt-player" style="display:none;"></div>
 
 <script>
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  document.head.appendChild(tag);
-  var player, playing = false;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('yt-player', {
-      height: '1', width: '1',
-      videoId: 'qN4ooNx77u0',
-      playerVars: { autoplay: 0 }
-    });
-  }
-  function togglePlay() {
-    if (!player) return;
-    if (playing) {
-      player.pauseVideo();
-      document.getElementById('play-btn').innerHTML = '▶ play';
-    } else {
-      player.playVideo();
-      document.getElementById('play-btn').innerHTML = '⏸ pause';
-    }
-    playing = !playing;
-  }
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(tag);
+var player, playing = false, ticker;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('yt-player', {
+    height:'1', width:'1', videoId:'qN4ooNx77u0',
+    playerVars:{autoplay:0},
+    events:{onStateChange:function(e){
+      if(e.data===0){playing=false;document.getElementById('play-btn').innerHTML='▶';clearInterval(ticker);}
+    }}
+  });
+}
+function togglePlay() {
+  if (!player) return;
+  if (playing) { player.pauseVideo(); document.getElementById('play-btn').innerHTML='▶'; clearInterval(ticker); }
+  else { player.playVideo(); document.getElementById('play-btn').innerHTML='⏸'; ticker=setInterval(tick,500); }
+  playing=!playing;
+}
+function tick() {
+  if(!player.getDuration) return;
+  var c=player.getCurrentTime(), d=player.getDuration();
+  document.getElementById('cur-time').textContent=fmt(c);
+  document.getElementById('rem-time').textContent='-'+fmt(d-c);
+  document.getElementById('prog-fill').style.width=(c/d*100)+'%';
+}
+function seekTo(e) {
+  if(!player.getDuration) return;
+  var r=e.currentTarget.getBoundingClientRect();
+  player.seekTo(((e.clientX-r.left)/r.width)*player.getDuration(),true);
+}
+function fmt(s){s=Math.floor(s);return Math.floor(s/60)+':'+(('0'+s%60).slice(-2));}
 </script>
 
 Just came back from watching *Project Hail Mary* in theaters. And I don’t usually watch movies in theaters.  
