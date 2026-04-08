@@ -9,7 +9,7 @@ Just came back from watching *Project Hail Mary* in theaters. And I don’t usua
 
 It’s been a long time since we saw something this kind, this full of heart, this touching.  
 
-I keep thinking—what are we really doing as humans every day? What makes us struggle, fight, keep going?  
+I keep thinking, what are we really doing as humans every day? What makes us struggle, fight, keep going?  
 
 And then we look at Earth. Our planet. Our home. How fragile, how wide, how perfectly made for life.  
 
@@ -17,13 +17,13 @@ And then we look at Earth. Our planet. Our home. How fragile, how wide, how perf
 
 What does it even mean to “save humanity” on a planet that already feels so perfect? How small are our selfish thoughts in all of this? How much are we really giving back? How much are we protecting what we already have? How much are we loving what’s ours?  
 
-It goes for life too—our people, our family, our friends. How are we taking care of them? How are we showing up for them?  
+It goes for life too; our people, our family, our friends. How are we taking care of them? How are we showing up for them?  
 
-How lucky we are to have people like this in our lives—to talk with, to fight with, to laugh with, to live with.  
+How lucky we are to have people like this in our lives to talk with, to fight with, to laugh with, to live with.  
 
 Having someone to call our own. Having family. Friends like *Rocky*. How much gratitude can ever be enough for this?  
 
-And then we think about humanity itself—our brains, our curiosity, our ability to ask questions and find answers. How incredible that we can even try.  
+And then we think about humanity itself; our brains, our curiosity, our ability to ask questions and find answers. How incredible that we can even try.  
 
 How brave are the ones who risk everything to try something new. How amazing that questions exist and we can work to answer them.  
 
