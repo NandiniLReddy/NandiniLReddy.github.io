@@ -7,10 +7,34 @@ author: Nandini Lokesh Reddy
 
 <div style="margin-bottom: 2rem;">
   <p style="font-size: 0.8rem; opacity: 0.5; margin-bottom: 0.4rem; font-style: italic; letter-spacing: 0.03em;">♪ read it with this song, to feel the way i wrote it</p>
-  <div style="overflow: hidden; height: 80px; border-radius: 10px; background: #111;">
-    <iframe width="100%" height="180" src="https://www.youtube.com/embed/qN4ooNx77u0?modestbranding=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="margin-top: -100px; display: block;"></iframe>
-  </div>
+  <div id="yt-player" style="display:none;"></div>
+  <button id="play-btn" onclick="togglePlay()" style="background:none; border:1px solid #aaa; color:#aaa; padding:6px 16px; border-radius:20px; cursor:pointer; font-size:0.85rem; letter-spacing:0.05em;">▶ play</button>
 </div>
+
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  document.head.appendChild(tag);
+  var player, playing = false;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('yt-player', {
+      height: '1', width: '1',
+      videoId: 'qN4ooNx77u0',
+      playerVars: { autoplay: 0 }
+    });
+  }
+  function togglePlay() {
+    if (!player) return;
+    if (playing) {
+      player.pauseVideo();
+      document.getElementById('play-btn').innerHTML = '▶ play';
+    } else {
+      player.playVideo();
+      document.getElementById('play-btn').innerHTML = '⏸ pause';
+    }
+    playing = !playing;
+  }
+</script>
 
 Just came back from watching *Project Hail Mary* in theaters. And I don’t usually watch movies in theaters.  
 
