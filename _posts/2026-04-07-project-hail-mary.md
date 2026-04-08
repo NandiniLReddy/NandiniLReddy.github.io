@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "After Project Hail Mary"
 date: 2026-04-07
 author: Nandini Lokesh Reddy
@@ -91,4 +91,4 @@ How much gratitude is enough—for this planet, for life, for Lord Shiva, for th
 
 ---
 
-And somewhere in all of this — thank you. To Andy Weir, for imagining a story that made us feel this. To the director, for making us see it. And to Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen — four humans who left Earth and looked back. Who went farther than we ever have, and still came home. How do you even thank someone for that? Maybe you just carry it. Maybe you just try to live a little bigger because of it.
+And somewhere in all of this, thank you. To Andy Weir, for imagining a story that made us feel this. To the director, for making us see it. And to Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen, four humans who left Earth and looked back. Who went farther than we ever have, and still came home. How do you even thank someone for that? Maybe you just carry it. Maybe you just try to live a little bigger because of it.
