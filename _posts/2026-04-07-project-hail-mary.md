@@ -20,7 +20,7 @@ author: Nandini Lokesh Reddy
   </div>
   <span id="rem-time" style="font-size:0.75rem;color:#888;flex-shrink:0;">-0:00</span>
 </div>
-<div id="yt-player" style="display:none;"></div>
+<div id="yt-player" style="position:absolute;left:-9999px;width:1px;height:1px;"></div>
 
 <script>
 var tag = document.createElement('script');
@@ -30,7 +30,7 @@ var player, playing = false, ticker;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
     height:'1', width:'1', videoId:'qN4ooNx77u0',
-    playerVars:{autoplay:0},
+    playerVars:{autoplay:0, playsinline:1},
     events:{onStateChange:function(e){
       if(e.data===0){playing=false;document.getElementById('play-btn').innerHTML='▶';clearInterval(ticker);}
     }}
