@@ -6,10 +6,10 @@ author: Nandini Lokesh Reddy
 ---
 
 <div style="display:flex;align-items:center;gap:12px;background:#1a1a1a;border:1px solid #333;border-radius:6px;padding:10px 14px;margin-bottom:2rem;">
-  <img src="https://img.youtube.com/vi/V6PVZP7zLkU/mqdefault.jpg" style="width:44px;height:44px;object-fit:cover;border-radius:3px;flex-shrink:0;">
+  <img src="https://img.youtube.com/vi/g20UseHL_Ok/mqdefault.jpg" style="width:44px;height:44px;object-fit:cover;border-radius:3px;flex-shrink:0;">
   <div style="flex-shrink:0;min-width:130px;">
     <div style="font-size:0.8rem;color:#ddd;font-style:italic;">read it with this song</div>
-    <div style="font-size:0.72rem;color:#888;margin-top:2px;">hum honge kamyab, instrumental</div>
+    <div style="font-size:0.72rem;color:#888;margin-top:2px;">hum honge kamyab, kids version</div>
   </div>
   <button id="play-btn" onclick="togglePlay()" style="background:none;border:none;color:#ddd;cursor:pointer;font-size:1.1rem;flex-shrink:0;padding:0 4px;">▶</button>
   <span id="cur-time" style="font-size:0.75rem;color:#888;flex-shrink:0;">0:00</span>
@@ -29,8 +29,8 @@ document.head.appendChild(tag);
 var player, playing = false, ticker;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
-    height:'1', width:'1', videoId:'V6PVZP7zLkU',
-    playerVars:{autoplay:0, playsinline:1},
+    height:'1', width:'1', videoId:'g20UseHL_Ok',
+    playerVars:{autoplay:0, playsinline:1, start:30},
     events:{onStateChange:function(e){
       if(e.data===0){playing=false;document.getElementById('play-btn').innerHTML='▶';clearInterval(ticker);}
     }}
