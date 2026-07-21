@@ -86,3 +86,5 @@ This was never about religion. Never about nationality. Never about my integrity
 ---
 
 I don't know where this goes from here. I don't know if the ones responsible will ever answer for it. But I know this: a country is not its government. A country is the sixteen-year-old standing in the street, tear gas in her eyes, still asking to be heard. That is India. That is what I will keep believing in, even on a day like today.
+
+May Shiva be with all these children.
